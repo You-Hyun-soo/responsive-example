@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 5px solid red;
+}
+.container::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.row{
+    margin: 0 -20px;
+}
+.nemo{
+    height: 150px;
+    float: left;
+    width: 25%;
+}
+.inner{
+    height: 100%;
+    background-color: orange;
+    margin: 0 20px;
+}
+
+@media screen and (max-width:768px){
+    .nemo{
+        width: 50%;
+    }
+}
+@media screen and (max-width:480px){
+    .nemo{
+        width: 100%;
+    }
+}
+body{
+    background-color: #2f2f36;
+}
+.wrapper{
+    margin: 60px auto;
+    padding: 0 50px;
+}
+.grid{
+    background-color: #FFF;
+    padding: 5px;
+}
+.grid::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.box{
+    /* height: 150px; */
+    float: left;
+}
+.in{
+    height: 150px;
+    margin: 5px;
+}
+.b01{
+    width: 80%;
+}
+.b02{
+    width: 20%;
+}
+.b03{
+    width: 40%;
+}
+.b04{
+    width: 20%;
+}
+.b05{
+    width: 30%;
+}
+.b06{
+    width: 10%;
+}
+.b07{
+    width: 25%;
+}
+.b08{
+    width: 25%;
+}
+.b09{
+    width: 25%;
+}
+.b10{
+    width: 25%;
+}
+.b01 .in{
+    background-color: red;
+}
+.b02 .in{
+    background-color: blue;
+}
+.b03 .in{
+    background-color: blueviolet;
+}
+.b04 .in{
+    background-color: violet;
+}
+.b05 .in{
+    background-color: skyblue;
+}
+.b06 .in{
+    background-color: sandybrown;
+}
+.b07 .in{
+    background-color: seagreen;
+}
+.b08 .in{
+    background-color: springgreen;
+}
+.b09 .in{
+    background-color: sienna;
+}
+.b10 .in{
+    background-color: silver;
+}
+
+@media screen and (min-width:1200px){
+    .wrapper{
+        max-width: 1200px;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .box{
+        width: 33.33%;
+    }
+    .b01{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .wrapper{
+        padding: 0;
+        margin: 0;
+    }
+    .box{
+        width: 50%;
+    }
+    .b01, .b10{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:480px){
+    .box{
+        width: 100%;
+    }
+}
